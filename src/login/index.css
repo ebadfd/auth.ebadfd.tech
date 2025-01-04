@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-bg-primary: #181b23;
+    --color-bg-secondary: #2a2f3a;
+    --color-text-primary: #f3eee5;
+    --color-border-primary: #4d8dc4;
+    --color-border-form: #565658;
+    --color-danger: #d36c6c;
+    --color-alert-info-bg: #dce9f9;
+    --color-alert-info-border: #4d8dc4;
+}
+
+body.kcBodyClass {
+    @apply bg-[url("./assets/img/wall.png")] bg-no-repeat bg-center bg-fixed;
+    @apply font-firamono;
+}
+
+.kcHeaderWrapperClass {
+    @apply text-3xl font-bold underline;
+}
+
+.kcFormCardClass {
+    background: var(--color-bg-primary);
+    border: 1px solid var(--color-border-form);
+    border-top: 5px solid var(--color-border-primary);
+    color: var(--color-text-primary);
+}
+
+#kc-info-wrapper {
+    background: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+}
+
+.pf-c-dropdown__menu-item {
+    background: var(--color-bg-secondary);
+}
+
+.pf-c-dropdown__menu-item:hover {
+    background: var(--color-bg-primary) !important;
+}
+
+#kc-locale-dropdown a {
+    color: var(--color-text-primary);
+}
+
+#kc-current-locale-link {
+    color: var(--color-text-primary) !important;
+}
+
+.pf-c-input-group {
+    background: var(--color-bg-secondary);
+}
+
+.kcInputClass {
+    --pf-c-form-control--BorderTopColor: var(--color-border-primary);
+    --pf-c-form-control--BorderBottomColor: var(--color-border-primary);
+    --pf-c-form-control--BorderRightColor: var(--color-border-primary);
+    --pf-c-form-control--BorderLeftColor: var(--color-border-primary);
+    --pf-global--BackgroundColor--100: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+    background-clip: unset;
+}
+
+.kcInputClass:focus-visible {
+    outline: unset;
+}
+
+.required {
+    --pf-global--danger-color--200: var(--color-danger);
+}
+
+.pf-c-button.pf-m-control {
+    --pf-c-button--after--BorderColor: var(--color-bg-secondary);
+}
+
+.kcFormPasswordVisibilityButtonClass {
+    background: var(--color-bg-secondary) !important;
+    color: var(--color-text-primary) !important;
+    border: 1px solid var(--color-border-primary) !important;
+    padding: 5px 10px !important;
+}
+
+#kc-form-options span {
+    color: var(--color-text-primary) !important;
+}
+
+.alert-info {
+    background-color: var(--color-alert-info-bg);
+    border-color: var(--color-alert-info-border);
+}
