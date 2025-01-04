@@ -8,6 +8,7 @@
     --color-bg-primary: #181b23;
     --color-bg-secondary: #2a2f3a;
     --color-text-primary: #f3eee5;
+    --color-text-secondary: #d3c8ba;
     --color-border-primary: #4d8dc4;
     --color-border-form: #565658;
     --color-danger: #d36c6c;
@@ -92,4 +93,50 @@ body.kcBodyClass {
 .alert-info {
     background-color: var(--color-alert-info-bg);
     border-color: var(--color-alert-info-border);
+}
+
+#kc-page-title span {
+    color: var(--color-text-primary);
+}
+
+#kc-oauth {
+    line-height:2.2em;
+}
+
+.instruction  {
+    margin-top: 20px !important;
+}
+
+#kc-totp-settings {
+    line-height: 1.5em;
+}
+
+ol#kc-totp-settings {
+    margin: 0;
+    padding: 0px !important;
+    margin-bottom: 20px;
+}
+
+#kc-totp-settings span {
+    color: var(--color-text-primary);
+}
+
+#kc-totp-supported-apps {
+    margin: 10px;
+}
+
+#kc-totp-supported-apps span {
+    color: var(--color-text-secondary);
+}
+
+#kc-totp-secret-qr-code {
+    margin: 20px;
+}
+
+#kc-totp-settings li {
+    margin-top: 10px;
+}
+
+#kc-totp-secret-key {
+    background: var(--color-bg-primary);
 }
