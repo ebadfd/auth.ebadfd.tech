@@ -7,7 +7,12 @@ export default defineConfig({
     plugins: [
         react(),
         keycloakify({
-            accountThemeImplementation: "none"
+            accountThemeImplementation: "none",
+            themeName: "ebadfd-identity-theme",
+            keycloakVersionTargets: {
+                '22-to-25': false,
+                "all-other-versions": "ebadfd-theme.jar",
+            },
         })
     ]
 });
