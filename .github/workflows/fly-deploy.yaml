@@ -1,4 +1,4 @@
-name: Deploy to production
+name: Fly Deploy
 on:
   push:
     branches:
@@ -27,3 +27,8 @@ jobs:
 
       - name: Build Keycloak theme
         run: pnpm run build-keycloak-theme
+
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+      - run: flyctl deploy --local-only
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
